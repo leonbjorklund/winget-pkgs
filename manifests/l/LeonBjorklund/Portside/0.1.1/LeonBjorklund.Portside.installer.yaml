@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: LeonBjorklund.Portside
+PackageVersion: 0.1.1
+MinimumOSVersion: 10.0.22000.0
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+UnsupportedOSArchitectures:
+- arm64
+ProductCode: '{AFF72E51-A6A3-43E6-A6A4-71C15C264409}_is1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/leonbjorklund/portside/releases/download/v0.1.1/Portside-0.1.1-x64-setup.exe
+  InstallerSha256: '27E1FC5BEBB00238838C42C2ED1F4CD27445E958A41E9E89C7DB9637657D4F25'
+ManifestType: installer
+ManifestVersion: 1.12.0
